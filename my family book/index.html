@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>my family book</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>My Family Book</h1>
+        <div>
+            <img src="61zTGIEvQoL.jpg" id="myImage" width="800" height="700">
+        </div>
+        <br>
+        <input type="button" onclick="changeImage()" value="Next" />
+        <script>
+            function changeImage() {
+                var image = document.getElementById('myImage');
+                if (image.src.match("61zTGIEvQoL.jpg")) {
+                    image.src = "g10484-512.png";
+                }
+                else {
+                    image.src = "g10485-512.png";
+                }
+            }
+        </script>
+        <img src="Untitled-1.png" id="mytext" width="800" height="700">
+    </div>
+    <br>
+    <input type="button" onclick="changetext()" value="Next" />
+    <script>
+        function changetext() {
+            var image = document.getElementById('mytext');
+            if (image.src.match("Untitled-1.png")) {
+                image.src = "Untitled-3.png";
+            }
+            else {
+                image.src = "Untitled-2.png";
+            }
+        }
+    </script>
+    </center>
+
+</body>
+
+</html>
